@@ -1,0 +1,35 @@
+ /******************Confirmación*****************************/
+ 
+ .main-container {
+     grid-area: m;
+     display: grid;
+     height: 70%;
+     grid-template-rows: 2fr 1fr;
+     row-gap: 5%;
+     grid-template-areas: "a""b";
+     background-color: #192730;
+     border-radius: 0.7rem;
+     margin: 4% 15%;
+ }
+ 
+ .main1 {
+     grid-area: a;
+     font-size: 2rem;
+     font-weight: bold;
+     align-self: center;
+     color: white;
+     text-align: center;
+ }
+ 
+ .main2 {
+     grid-area: b;
+     max-height: 100%;
+     font-size: 1.2rem;
+     color: white;
+     margin: 0 2.5rem;
+     text-align: center;
+ }
+ 
+ .footer-container {
+     height: 2rem;
+ }

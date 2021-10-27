@@ -1,0 +1,130 @@
+/*******PC*************/
+
+@media screen and (min-width:800px) {
+    .main-container {
+        grid-area: m;
+        display: grid;
+        height: 80%;
+        grid-template-rows: 30% 70%;
+        grid-template-columns: 60% 40%;
+        row-gap: 5%;
+        grid-template-areas: "a c" "b c";
+        background-color: white;
+        border-radius: 0.7rem;
+        margin: 2.5% 0.7%;
+    }
+    .main1 {
+        grid-area: a;
+        font-size: 3rem;
+        font-weight: bold;
+        align-self: center;
+        color: #0F191F;
+        margin: auto 2.5rem;
+        line-height: 3rem;
+    }
+    .main2 {
+        grid-area: b;
+        max-height: 100%;
+        font-size: 1.2rem;
+        color: #0F191F;
+        margin: 0 2.5rem;
+    }
+    .main3 {
+        grid-area: c;
+        justify-self: flex-end;
+        height: 100%;
+        align-self: center;
+        justify-self: flex-end;
+        padding: 5%;
+    }
+    img {
+        width: 100%;
+        object-fit: contain;
+    }
+    .img-small {
+        display: none;
+    }
+}
+
+
+/**********tablet**************/
+
+@media screen and (max-width:800px) {
+    .main-container {
+        grid-area: m;
+        display: grid;
+        height: 100%;
+        grid-template-areas: "a" "b" "c";
+    }
+    .main1 {
+        grid-area: a;
+        font-size: 2.5rem;
+        font-weight: bold;
+        align-self: center;
+        text-align: center;
+        width: 100%;
+    }
+    .main2 {
+        grid-area: b;
+        font-size: 1.2rem;
+        width: 100%;
+        text-align: justify;
+        padding: 2.5%;
+        box-sizing: border-box;
+    }
+    .main3 {
+        grid-area: c;
+        width: 100%;
+        justify-self: center;
+        overflow: hidden;
+    }
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}
+
+
+/***********Smartphone****************/
+
+@media screen and (max-width:400px) {
+    .main-container {
+        grid-area: m;
+        display: grid;
+        height: 100%;
+        grid-template-rows: 20% 30% 50%;
+        grid-template-areas: "a" "c""b";
+    }
+    .main1 {
+        grid-area: a;
+        font-size: 1.7rem;
+        font-weight: bold;
+        align-self: center;
+        text-align: center;
+        width: 100%;
+    }
+    .main2 {
+        grid-area: b;
+        font-size: 0.8rem;
+        width: 100%;
+        text-align: justify;
+        padding: 2.5%;
+        box-sizing: border-box;
+        text-align: center;
+    }
+    .main3 {
+        height: 100%;
+        align-self: flex-start;
+        overflow: hidden;
+    }
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        align-self: flex-start;
+    }
+    .img-big {
+        display: none;
+    }
+}

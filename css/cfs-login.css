@@ -1,0 +1,50 @@
+@media screen and (min-width:800px) {
+    .main-container {
+        grid-area: m;
+        max-width: 50%;
+        max-height: 50%;
+        margin: 5% 30%;
+        display: grid;
+        row-gap: 1rem;
+        grid-template-rows: 1.5fr 1fr 1fr 2fr;
+        grid-template-areas: "t t" "a a" "b b" "c d";
+        border-radius: 1rem;
+        background-color: white;
+        justify-items: center;
+    }
+    .title {
+        grid-area: t;
+        justify-self: start;
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #0F191F;
+        justify-self: center;
+    }
+    .a {
+        grid-area: a;
+        color: #0F191F;
+        ;
+    }
+    .b {
+        grid-area: b;
+    }
+    .c {
+        grid-area: c;
+    }
+    .d {
+        grid-area: d;
+    }
+    .input-form {
+        width: 100%;
+        height: 100%;
+        border-radius: 0.3rem;
+        font-size: 1rem;
+        border: 1 solid #192730;
+        box-shadow: 0.1rem 0.1rem #b2beb57a;
+        color: grey
+    }
+    .option {
+        color: #192730;
+        align-self: center;
+    }
+}

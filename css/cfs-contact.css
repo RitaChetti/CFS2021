@@ -1,0 +1,443 @@
+ /***************Formulario*****************/
+ /******PC***************/
+ 
+ @media screen and (min-width: 800px) {
+     .main-container {
+         grid-area: m;
+         display: grid;
+         grid-template-columns: 1fr 1fr;
+         grid-template-areas: "left right";
+     }
+     .main-right {
+         grid-area: right;
+         margin: 11%;
+         padding: 3%;
+         max-height: 70%;
+         max-width: 70%;
+         display: grid;
+         grid-template-rows: 6fr 1fr;
+         row-gap: 1%;
+         grid-template-areas: "w" "y";
+     }
+     .w {
+         grid-area: w;
+     }
+     .y {
+         grid-area: y;
+         font-size: 0.9rem;
+     }
+     .form-container {
+         grid-area: left;
+         max-width: 80%;
+         max-height: 45%;
+         padding: 3%;
+         display: grid;
+         grid-template-columns: 1fr 3fr;
+         column-gap: 1rem;
+         row-gap: 1rem;
+         grid-template-rows: 1.5rem 1rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem;
+         grid-template-areas: "s t" "u v""a b" "c d" "e f" "g h" "i j" "k l" "m n" "o p";
+         border-radius: 1rem;
+     }
+     .title {
+         grid-area: t;
+         justify-self: start;
+         font-size: 2rem;
+         font-weight: bold;
+     }
+     .subtitle {
+         grid-area: v;
+         justify-self: start;
+         font-size: 0.8rem;
+     }
+     .a {
+         grid-area: a;
+         justify-self: flex-end;
+     }
+     .b {
+         grid-area: b;
+     }
+     .c {
+         grid-area: c;
+         justify-self: flex-end;
+     }
+     .d {
+         grid-area: d;
+     }
+     .e {
+         grid-area: e;
+         justify-self: flex-end;
+     }
+     .f {
+         grid-area: f;
+     }
+     .g {
+         grid-area: g;
+         justify-self: flex-end;
+     }
+     .h {
+         grid-area: h;
+     }
+     .i {
+         grid-area: i;
+         justify-self: flex-end;
+     }
+     .j {
+         grid-area: j;
+     }
+     .k {
+         grid-area: k;
+         justify-self: flex-end;
+     }
+     .l {
+         grid-area: l;
+     }
+     .m {
+         grid-area: m;
+         justify-self: flex-end;
+     }
+     .n {
+         grid-area: n;
+     }
+     .o {
+         grid-area: o;
+         justify-self: flex-end;
+     }
+     .p {
+         grid-area: p;
+         justify-self: flex-end;
+     }
+     .input-form {
+         width: 100%;
+         height: 100%;
+         border-radius: 0.3rem;
+         font-size: 1rem;
+         border: 0;
+         box-shadow: 0.1rem 0.1rem #b2beb57a;
+         color: black;
+     }
+     .tel-container {
+         display: grid;
+         grid-template-columns: 1fr 4fr;
+         column-gap: 0.5rem;
+         grid-template-rows: 2rem;
+         grid-template-areas: "cod tel";
+     }
+     .cod {
+         grid-area: cod;
+     }
+     .tel {
+         grid-area: tel;
+     }
+     label {
+         font-weight: bolder;
+     }
+     .submit-button {
+         width: 5rem;
+         height: 2rem;
+         border-radius: 0.5rem;
+         font-size: 1rem;
+         background-color: #008CBA;
+         border: 0;
+         box-shadow: 0.01rem 0.1rem #008bba42;
+     }
+ }
+ /*************Ipad********************************************/
+ 
+ @media screen and (max-width: 800px) {
+     .main-container {
+         grid-area: m;
+         display: grid;
+         grid-template-rows: 3fr 2fr;
+         grid-template-areas: "up" "down";
+     }
+     .main-right {
+         grid-area: down;
+         margin: 7% 15%;
+         max-height: 70%;
+         max-width: 100%;
+         display: grid;
+         grid-template-rows: 6fr 1fr;
+         row-gap: 1%;
+         grid-template-areas: "w" "y";
+     }
+     .w {
+         grid-area: w;
+     }
+     .y {
+         grid-area: y;
+         font-size: 0.9rem;
+     }
+     .form-container {
+         grid-area: up;
+         max-width: 70%;
+         max-height: 100%;
+         margin: 0 15%;
+         padding: 1.5%;
+         display: grid;
+         grid-template-columns: 1fr 3fr;
+         column-gap: 1rem;
+         row-gap: 0.3rem;
+         grid-template-rows: 2FR 1FR 2FR 2FR 2FR 2FR 2FR 2FR 2FR 2FR 2FR 2FR 2FR 2FR 2FR 2FR 2FR;
+         grid-template-areas: "s t" "u v""a a" "b b" "c c" "d d" "e e" "f f" "g g" "h h" "i i" "j j" "k k" "l l" "m m" "n n" "o o""p p";
+     }
+     .title {
+         grid-area: t;
+         justify-self: start;
+         font-size: 2rem;
+         font-weight: bold;
+     }
+     .subtitle {
+         grid-area: v;
+         justify-self: start;
+         font-size: 0.7rem;
+     }
+     .a {
+         grid-area: a;
+         justify-self: flex-start;
+         align-self: flex-end;
+     }
+     .b {
+         grid-area: b;
+     }
+     .c {
+         grid-area: c;
+         justify-self: flex-start;
+         align-self: flex-end;
+     }
+     .d {
+         grid-area: d;
+     }
+     .e {
+         grid-area: e;
+         justify-self: flex-start;
+         align-self: flex-end;
+     }
+     .f {
+         grid-area: f;
+     }
+     .g {
+         grid-area: g;
+         justify-self: flex-start;
+         align-self: flex-end;
+     }
+     .h {
+         grid-area: h;
+     }
+     .i {
+         grid-area: i;
+         justify-self: flex-start;
+         align-self: flex-end;
+     }
+     .j {
+         grid-area: j;
+     }
+     .k {
+         grid-area: k;
+         justify-self: flex-start;
+         align-self: flex-end;
+     }
+     .l {
+         grid-area: l;
+     }
+     .m {
+         grid-area: m;
+         justify-self: flex-start;
+         align-self: flex-end;
+     }
+     .n {
+         grid-area: n;
+     }
+     .p {
+         grid-area: p;
+         align-self: flex-end;
+     }
+     .input-form {
+         width: 100%;
+         height: 100%;
+         border-radius: 0.3rem;
+         font-size: 1rem;
+         border: 0;
+         box-shadow: 0.1rem 0.1rem #b2beb57a;
+         color: black;
+     }
+     .tel-container {
+         display: grid;
+         grid-template-columns: 1fr 4fr;
+         column-gap: 0.5rem;
+         grid-template-areas: "cod tel";
+     }
+     .cod {
+         grid-area: cod;
+     }
+     .tel {
+         grid-area: tel;
+     }
+     .submit-button {
+         width: 100%;
+         height: 2rem;
+         border-radius: 0.3rem;
+         font-size: 1rem;
+         background-color: #008CBA;
+         border: 0.2rem;
+         box-shadow: 0.01rem 0.1rem #008bba42;
+     }
+ }
+ /*************Smartphone***********************/
+ 
+ @media screen and (max-width: 400px) {
+     .general-container {
+         display: grid;
+         grid-template-areas: "h" "n" "m" "f";
+         height: 100%;
+         grid-template-rows: 7% 35% 90% 5%;
+     }
+     .main-container {
+         grid-area: m;
+         display: grid;
+         grid-template-rows: 1FR 1FR;
+         grid-template-areas: "up" "down";
+         margin: -35% -15%;
+     }
+     .main-right {
+         grid-area: down;
+         padding-top: 15%;
+         max-height: 70%;
+         max-width: 100%;
+         display: grid;
+         grid-template-rows: 6fr 1fr;
+         row-gap: 1%;
+         grid-template-areas: "w" "y";
+     }
+     .w {
+         grid-area: w;
+     }
+     .y {
+         grid-area: y;
+         font-size: 0.9rem;
+     }
+     .form-container {
+         grid-area: up;
+         max-width: 100%;
+         max-height: 100%;
+         display: grid;
+         grid-template-columns: 1fr 3fr;
+         column-gap: 1rem;
+         row-gap: 1%;
+         /* grid-template-rows: 2FR 1FR 2FR 2FR 2FR 2FR 2FR 2FR 2FR 2FR 2FR 2FR 2FR 2FR 2FR 2FR 2FR; */
+         grid-template-areas: "t t" "v v""a a" "b b" "c c" "d d" "e e" "f f" "g g" "h h" "i i" "j j" "k k" "l l" "m m" "n n" "o o""p p";
+     }
+     .title {
+         grid-area: t;
+         font-size: 1rem;
+         font-weight: bold;
+         text-align: center;
+     }
+     .subtitle {
+         grid-area: v;
+         font-size: 0.3rem;
+         text-align: center;
+     }
+     .a {
+         grid-area: a;
+         justify-self: flex-start;
+         align-self: flex-end;
+     }
+     .b {
+         grid-area: b;
+     }
+     .c {
+         grid-area: c;
+         justify-self: flex-start;
+         align-self: flex-end;
+     }
+     .d {
+         grid-area: d;
+     }
+     .e {
+         grid-area: e;
+         justify-self: flex-start;
+         align-self: flex-end;
+     }
+     .f {
+         grid-area: f;
+     }
+     .g {
+         grid-area: g;
+         justify-self: flex-start;
+         align-self: flex-end;
+     }
+     .h {
+         grid-area: h;
+     }
+     .i {
+         grid-area: i;
+         justify-self: flex-start;
+         align-self: flex-end;
+     }
+     .j {
+         grid-area: j;
+     }
+     .k {
+         grid-area: k;
+         justify-self: flex-start;
+         align-self: flex-end;
+     }
+     .l {
+         grid-area: l;
+     }
+     .m {
+         grid-area: m;
+         justify-self: flex-start;
+         align-self: flex-end;
+     }
+     .n {
+         grid-area: n;
+     }
+     .p {
+         grid-area: p;
+         align-self: flex-end;
+     }
+     .input-form {
+         width: 100%;
+         height: 100%;
+         border-radius: 0.3rem;
+         font-size: 0.7rem;
+         border: 0;
+         box-shadow: 0.1rem 0.1rem #b2beb57a;
+         color: black;
+     }
+     .tel-container {
+         display: grid;
+         grid-template-columns: 1fr 4fr;
+         column-gap: 0.5rem;
+         grid-template-areas: "cod tel";
+     }
+     .cod {
+         grid-area: cod;
+     }
+     .tel {
+         grid-area: tel;
+     }
+     .label {
+         font-size: 0.7rem;
+     }
+     .submit-button {
+         width: 100%;
+         height: 2rem;
+         border-radius: 0.3rem;
+         font-size: 1rem;
+         background-color: #008CBA;
+         border: 0.2rem;
+         box-shadow: 0.01rem 0.1rem #008bba42;
+     }
+ }
+ 
+ option {
+     color: black
+ }
+ 
+ iframe {
+     height: 100%;
+     width: 100%;
+ }
